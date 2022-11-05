@@ -7,5 +7,6 @@ defmodule SimplephxWeb.Router do
 
   scope "/api", SimplephxWeb do
     pipe_through :api
+    get  "/calcula_pagos", ApiController, :index
   end
 end
